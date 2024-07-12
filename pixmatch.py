@@ -189,9 +189,10 @@ def ResetBoard():
 
     sidebar_emoji_in_list = False
     for vcell in range(1, ((total_cells_per_row_or_col ** 2)+1)):
-        rndm_no = random.randint(1, len(mystate.emoji_bank))-1
+        # Asegúrate de que cada botón tenga una de las palabras
+        if vcell == 1: vemoji = "Peritoneal"
+        else: vemoji = "Retroperitoneal"
         if mystate.plyrbtns[vcell]['isPressed'] == False:
-            vemoji = mystate.emoji_bank[rndm_no]
             mystate.plyrbtns[vcell]['eMoji'] = vemoji
             if vemoji == mystate.sidebar_emoji: sidebar_emoji_in_list = True
 
