@@ -13,7 +13,7 @@ vDrive = os.path.splitdrive(os.getcwd())[0]
 if vDrive == "C:": vpth = "C:/Users/Shawn/dev/utils/pixmatch/"   # local developer's disc
 else: vpth = "./"
 
-sbe = """<span style='font-size: 80px;
+sbe = """<span style='font-size: 60px;
                       border-radius: 7px;
                       text-align: center;
                       display:inline;
